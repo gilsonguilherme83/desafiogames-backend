@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 
-mongoose.connect("mongodb+srv://admin:admin-games@cluster0.tj3qe.mongodb.net/dbgames?retryWrites=true&w=majority",
+mongoose.connect(procces.env.PORT,
 {
     useNewUrlParser: true,
     useUnifiedTopology: true
