@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 
-mongoose.connect(procces.env.PORT,
+mongoose.connect(procces.env.MONGO_URL,
 {
     useNewUrlParser: true,
     useUnifiedTopology: true
