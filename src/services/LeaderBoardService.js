@@ -13,7 +13,7 @@ exports.getLeaderBoard = async function () {
 }
 
 exports.getRankLeaderBoard = async function () {
-
+console.log(100);
     try {
         var listLeaderBoard = [];
         listLeaderBoard = await LeaderBoard.find().sort({balance : -1}).limit(100);

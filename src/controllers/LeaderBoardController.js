@@ -12,7 +12,7 @@ exports.getLeaderBoard =  async (req, res) => {
         }
 };
 
-exports.getLeaderBoardDash =  async (req, res) => {
+exports.getLeaderBoardDash =  async (req, res) => { 
     try {
         
         const totalLeaderBoard = await LeaderBoardService.getTotalLeaderBoard();        
@@ -29,7 +29,7 @@ exports.getRankLeaderBoard =  async (req, res) => {
     try {
         const listRankLeaderBoard = await LeaderBoardService.getRankLeaderBoard();
 
-        let date_ob = new Date();
+       let date_ob = new Date();
         let tempo = date_ob.getMinutes();
         let variavel = (tempo%2);
 
@@ -56,7 +56,6 @@ exports.deleteLeaderBoard = async(req, res) => {
 
 exports.postLeaderBoard = async(req, res) => {
     try {
-
         const maxDataLeaderBoard = await LeaderBoardService.getMaxDataLeaderBoard();
 
         if (!maxDataLeaderBoard) {
