@@ -53,7 +53,6 @@ exports.postGameResult = async function (lstGameResultMemoria) {
 }
 
 exports.deleteGameResult = async function () {
-
     try {
         await GameResult.deleteMany();
     } catch (e) {

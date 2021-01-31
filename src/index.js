@@ -18,10 +18,5 @@ app.use(express.urlencoded({extended: true}));
 app.use(cors());
 app.use(require("./routes"));
 
-//Tarefa agendada: Realizar balanço das partidas 
-//cron.schedule('*/2 * * * *', () => {
- //   postLeaderBoard();
- // });
-
 
 app.listen(process.env.PORT || 3001);
